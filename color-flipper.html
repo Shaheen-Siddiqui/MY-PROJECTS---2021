@@ -1,0 +1,59 @@
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>by myself</title>
+     
+</head>
+<style>
+     #user{
+          height: 30px;
+          width: 250px;
+          font-weight: bold;
+          text-align: center;
+          border: 10px groove black;
+      
+      }
+      .but{
+          height: 200px;
+          width: 200px;
+          border: 50px groove greenyellow;
+          border-radius: 100px;
+          text-shadow: 2px 2px #FF0000;
+          text-align: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 20px;
+      
+      }
+
+</style>
+<body id="box" bgcolor="bisque"><br><br><br>
+  <center>   <input id="user" placeholder="Enter The Color Name" ><br><br><br></center>
+    <center> <input class="but" type="button" value="Change" onclick="change()"></center>
+     
+</body>
+<script>
+     function change(){
+          let input = document.getElementById("user") 
+          let color = document.getElementById("box")
+          color.style.backgroundColor= user.value;
+     }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
