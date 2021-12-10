@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+    #input{
+        height: 320px;
+        width: 900px;
+        border: 5px groove hotpink;
+        font-size: 23px;
+        font-family: 'Quicksand', sans-serif;
+        text-decoration: none;
+    }
+    #result{
+        border: 10px groove mediumorchid;
+        font-size: 25px;
+        font-weight: bolder;
+        height: 60px;
+        color: red;
+        width: 550px;}
+    h1{
+        font-size:60px;
+        color: maroon;
+    }
+    #but{position: relative;
+        top: 4.1rem;
+        right: 7rem;
+        height: 60px;
+        width: auto;
+        font-size: 19px;
+        border: 2px solid black;
+    font-weight: bold;}
+    #bdy{
+        background-color: #DFDBE5;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    
+</style>
+<body id="bdy">
+  
+   <center> <h1> VOWELS COUNTER</h1>
+
+<textarea name="" id="input" cols="30" rows="10"></textarea>
+<button onmouseenter="vowel()" id="but">click me</button><br>
+
+<div id="result"></div></center>
+</body>
+<script>
+     
+ 
+ input=document.getElementById("input")
+ result=document.getElementById("result")
+ function vowel() {
+   
+   input=document.getElementById("input")
+   search = input.value
+   
+   count=0
+
+   for(i of search){
+
+    if(i=='a'||i=='e'||i=='i'||i=='o'||i=='u'||i=='A'||i=='E'||i=='I'||i=='O'||i=='U'){
+      count=count+1
+    }
+   
+  }
+   console.log(count)
+   
+   result.innerHTML= `in this sentance number of vowels are..... 
+   💁‍♀️  ${count}  `
+   
+ }
+</script>
+</html>
